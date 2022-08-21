@@ -1,8 +1,7 @@
-
 @media only screen and (max-width: 600px) {
-  /* NAVBAR STYLING STARTS */
    #navbar div{
     display: flex;
+    gap: 0.5em;
     padding: 0.5vw 1vw;
    }
 
@@ -15,73 +14,23 @@
     padding: 0;
    }
 
-
    nav .flex-container {
     display: flex;
     flex-wrap: nowrap;
   }
 
   .flex-container a {
-    /* width: 100px;  */*/
     margin: 0;
     text-align: left;
-    vertical-align:-webkit-baseline-middle;
-    width:-moz-fit-content;
-    width:fit-content;
   }
-
-
-   .nav-links a {
-    color: #fff;
-   }
-   /* NAVBAR MENU */
-   .menu {
-    display: flex;
-    gap: 1em;
-    font-size: 18px;
-   }
-   .menu li:hover {
-    background-color: #4c9e9e;
-    border-radius: 5px;
-    transition: 0.3s ease;
-   }
-   .menu li {
-    padding: 5px 14px;
-   }
-   /* DROPDOWN MENU */
-   .services {
-    position: relative;
-   }
-   .dropdown {
-    background-color: rgb(1, 139, 139);
-    padding: 1em 0;
-    position: absolute;
-    /*WITH RESPECT TO PARENT*/
-    display: none;
-    border-radius: 8px;
-    top: 35px;
-   }
-   .dropdown li + li {
-    margin-top: 10px;
-   }
-   .dropdown li {
-    padding: 0.5em 1em;
-    width: 8em;
-    text-align: center;
-   }
-   .dropdown li:hover {
-    background-color: #4c9e9e;
-   }
-   .services:hover .dropdown {
-    display: block;
-   }
 }
 
 @media only screen and (min-width: 600.1px){
     #navbar{
         float: left;
         position: relative;
-        margin:;
+        margin: 1em;
+        padding: 1em;
         width: 15vw;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
         position: fixed;
@@ -98,15 +47,25 @@
     }
 
     #navbar a{
-        display: block;
-        text-align: left;
-        width: 100%;
-        padding-bottom: 5vw;
-        font-size: 1.25rem;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1vw 0;
+    font-size: 1.25rem;
     text-decoration: none;
     filter: opacity(90%);
     color: burlywood;
     }
+
+    section .flex-container{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    div .nav-link:first-child{
+        padding-top: -5em;
+    }
+
 }
 
 body{
@@ -144,6 +103,9 @@ body{
 #navbar header:hover, #navbar a:hover{
     color: #a52a2a;
     background-color: burlywood;
+    filter: opacity(100%);
+    border-radius: 1em;
+    transition: 0.5s ease;
 }
 
 #navbar a{
@@ -152,17 +114,12 @@ body{
     filter: opacity(90%);
     border-top: 0.5vw solid #a52a2a;
     border-bottom: 0.5vw solid #a52a2a;
-    /* width: max-content; */
     background-color: #a52a2a;
     color: burlywood;
 }
 
 #navbar a:first-child{
     padding-top: 5vw;
-}
-
-#navbar a:hover{
-    filter: opacity(100%);
 }
 
 /* Main element */
@@ -174,17 +131,9 @@ body{
 
 /* Section element */
 
-ul .flex-container {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-
   .flex-container li {
-    /* width: 100px; */
     margin: 10px;
     text-align: left;
-    /* line-height: 75px; */
-    /* font-size: 3px; */
   }
 
   .main-section header{
@@ -196,7 +145,6 @@ ul .flex-container {
     text-align: left;
     filter: blur(1px);
   }
-
 
 main section:first-child, main section:last-child{
     display: block;
